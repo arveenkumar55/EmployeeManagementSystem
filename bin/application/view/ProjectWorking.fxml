@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.ProjectWorkingController">
+   <center>
+      <BorderPane prefHeight="456.0" prefWidth="633.0" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="table" layoutX="5.0" layoutY="80.0" prefHeight="330.0" prefWidth="623.0">
+                    <columns>
+                      <TableColumn fx:id="ProjectNamecol" prefWidth="163.0" text="ProjectName" />
+                      <TableColumn fx:id="Supervisorcol" minWidth="0.0" prefWidth="174.0" text="Supervisor" />
+                        <TableColumn fx:id="StartDatecol" prefWidth="145.0" text="StartDate" />
+                        <TableColumn fx:id="DueDatecol" prefWidth="131.0" text="DueDate" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="31.0" layoutY="18.0" prefHeight="36.0" prefWidth="181.0" text="ProjectDetails:" textFill="#2009ee">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="514.0" layoutY="417.0" mnemonicParsing="false" onAction="#backButton" prefHeight="32.0" prefWidth="91.0" text="Back" textFill="#eb00b3">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

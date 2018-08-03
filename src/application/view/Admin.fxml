@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.AdminController">
+   <center>
+      <BorderPane prefHeight="456.0" prefWidth="496.0" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="body" stylesheets="@ground.css" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="AdminTable" prefHeight="456.0" prefWidth="158.0">
+                    <columns>
+                      <TableColumn fx:id="Menu" prefWidth="129.0" text="Menu" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="193.0" layoutY="51.0" prefHeight="32.0" prefWidth="94.0" text="Serial No:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="193.0" layoutY="106.0" prefHeight="32.0" prefWidth="94.0" text="Name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="193.0" layoutY="162.0" prefHeight="32.0" prefWidth="94.0" text="Email:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="193.0" layoutY="219.0" prefHeight="32.0" prefWidth="94.0" text="PhoneNo:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="193.0" layoutY="274.0" prefHeight="32.0" prefWidth="94.0" text="Role:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="193.0" layoutY="326.0" prefHeight="32.0" prefWidth="94.0" stylesheets="@ground.css" text="Sex:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="240.0" prefHeight="37.0" prefWidth="200.0" text="EmployeeData" textFill="#0004e4">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="SerialNo" layoutX="300.0" layoutY="51.0" prefHeight="32.0" prefWidth="193.0" textFill="#111111">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Name" layoutX="300.0" layoutY="106.0" prefHeight="32.0" prefWidth="193.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Email" layoutX="300.0" layoutY="162.0" prefHeight="32.0" prefWidth="193.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="PhoneNo" layoutX="300.0" layoutY="219.0" prefHeight="32.0" prefWidth="193.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Role" layoutX="300.0" layoutY="274.0" prefHeight="32.0" prefWidth="193.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Sex" layoutX="300.0" layoutY="326.0" prefHeight="32.0" prefWidth="193.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="193.0" layoutY="403.0" prefHeight="32.0" prefWidth="115.0" text="Data&amp;Time:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Date" layoutX="308.0" layoutY="403.0" prefHeight="32.0" prefWidth="193.0" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink layoutX="425.0" layoutY="28.0" onAction="#Logout" prefHeight="23.0" prefWidth="68.0" text="Logout" textFill="#e80000">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
